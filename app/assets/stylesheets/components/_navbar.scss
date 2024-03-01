@@ -1,0 +1,44 @@
+nav {
+  display:flex;
+  justify-content: space-between;
+  height: 15vh;
+  position: sticky;
+  top: 0;
+  z-index:1000;
+
+  section {
+    width:33%;
+  }
+
+  #main-logo{
+    img{
+      height: 90%;
+      margin-left: 5%;
+    }
+  }
+
+    #main-title {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  #navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
