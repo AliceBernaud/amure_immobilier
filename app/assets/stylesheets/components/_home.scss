@@ -1,4 +1,17 @@
-video {
-  width: 100%;
-  filter: brightness(60%);
+
+.video-drone{
+    position: relative;
+    width: 100%;
+    // filter: brightness(80%);
+  }
+
+.video-texte {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px; /* ou essayez avec '4vw' pour une taille responsive */
+  color: #303031;
+  text-align: center; /* Assure le centrage du texte si celui-ci occupe plusieurs lignes */
+  width: 100%; /* Assure une largeur maximale et le centrage du texte */
 }

@@ -1,0 +1,46 @@
+.footer{
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  background: black;
+  // position: static;
+  bottom: 0;
+  // z-index:11;
+  width: 100%;
+  transition: margin-left 0.3s, width 0.3s;
+
+  .liens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 33%;
+    a{
+      color:white;
+      text-decoration: none;
+      margin-top: 3%;
+    }
+  }
+  .main-logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+      img {
+      height: 10vh;
+      //   margin-right: 5px;
+      }
+    }
+
+  .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+
+    img {
+      height: 5vh;
+    }
+
+  }
+}
