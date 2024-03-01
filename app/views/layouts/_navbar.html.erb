@@ -1,9 +1,9 @@
-<nav>
+<%# <nav>
   <section id="main-logo">
-    <%= link_to home_path do %>
-        <%= image_tag("logo_carre_fond_blanc.png", alt:"logo Amure Immobilier") %>
-    <% end %>
-  </section>
+    <%= link_to root_path do %>
+        <%# <%= image_tag("logo_carre_fond_blanc.png", alt:"logo Amure Immobilier") %>
+    <%# <% end %>
+  <%# </section> %>
 
   <%# <section id='main-title'>
     <%= link_to home_path do %>
@@ -11,17 +11,17 @@
   <% end %>
   <%# </section>   %>
 
-  <section id="navigation">
-      <%= link_to home_path+'#apropos' do %>
-        <div>Qui sommes nous ? </div>
+  <%# <section id="navigation">
+      <%= link_to root_path+'#apropos' do %>
+        <%# <div>Qui sommes nous ? </div>
       <% end %>
-      <%= link_to '#' do %>
-        <div>Nos metiers</div>
-      <% end %>
-      <%= link_to home_path+'#contact' do %>
-        <div>Nous contacter</div>
-      <% end %>
-    </div>
-  </section>
+      <%# <%= link_to '#' do %>
+        <%# <div>Nos metiers</div> %>
+      <%# <% end %>
+      <%# <%= link_to root_path+'#contact' do %>
+        <%# <div>Nous contacter</div> %>
+      <%# <% end %>
+    <%# </div>
+  </section> %>
 
-</nav>
+<%# </nav> %>

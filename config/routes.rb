@@ -7,6 +7,14 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "home", to: "pages#home"
 
+  root 'pages#home'
+  # get 'apropos', to: 'pages#apropos', as: 'apropos'
+  # get 'ucg', to: 'pages#ucg', as: 'ucg'
+  # get 'contenu', to: 'pages#contenu', as: 'contenu'
+  # get 'masterclass', to: 'pages#masterclass', as: 'masterclass'
+  # get 'communitymanagement', to: 'pages#communitymanagement', as: 'communitymanagement'
+  # get 'website', to: 'pages#website', as: 'website'
+  # get 'cgv', to: 'pages#cgv', as: 'cgv'
   # Defines the root path route ("/")
   # root "posts#index"
 end
