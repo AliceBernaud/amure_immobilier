@@ -2,9 +2,38 @@
   display: flex;
     justify-content: space-around;
     align-items: center;
+    animation: scroll 20s linear infinite;
 
     a{
       text-decoration: none;
       color: black;
     }
+}
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.metiers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 20px
+
+}
+
+.elements{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 24px;
+  background-image: linear-gradient(to right, rgba(217, 165, 121, 0.5), rgba(254, 230, 181, 0.5));
 }

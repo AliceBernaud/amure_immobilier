@@ -1,0 +1,30 @@
+.apropos{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.presentation{
+  background-image: linear-gradient(to right, #182A5D, #2743AD, #E2E2E2, white);
+  width: 70%;
+  padding: 24px;
+
+  p{
+    color: white;
+    text-align: justify;
+    width: 65%;
+  }
+}
+
+.contact{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+  text-decoration: none;
+  color: black
+  }
+}

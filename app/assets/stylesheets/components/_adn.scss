@@ -2,10 +2,40 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .mot_cles{
   display: flex;
   flex-direction: column;
+  border-right: 1px  solid grey;
+  display: inline-block;
+  padding: 24px;
   width: 33%;
+
+  p{
+    text-align: center;
+  }
+  // animation: scroll 20s linear infinite;
 }
+
+.amure{
+  background-image: linear-gradient(to right, #182A5D, #2743AD, #3476B4);
+
+  p{
+    color: white;
+    text-align: justify;
+    padding: 24px;
+  }
+}
+
+
+
+// @keyframes scroll {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(-50%);
+//   }
+// }
