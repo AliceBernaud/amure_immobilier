@@ -38,3 +38,16 @@
   font-weight: bold;
   width: 100%; /* Assure une largeur maximale et le centrage du texte */
 }
+
+
+.btn-top{
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #f5f5f5; /* Couleur de fond */
+  color: #000; /* Couleur du texte */
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: none; /* Masqué par défaut */
+}

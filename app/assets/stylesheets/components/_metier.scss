@@ -1,25 +1,48 @@
-.titre{
+.container-metiers{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.titre {
   display: flex;
-    justify-content: space-around;
-    align-items: center;
-    animation: scroll 20s linear infinite;
+  flex-wrap: nowrap; /* Empêche les éléments de se replier sur la ligne suivante */
+  align-items: center; /* Centre les éléments verticalement */
+  justify-content: space-around; /* Distribue l'espace autour des éléments */
+  animation: slidein 20s infinite linear;
 
-    a{
-      text-decoration: none;
-      color: black;
-    }
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block; /* Assurez-vous que les éléments sont alignés horizontalement */
+    margin-right: 20px; /* Ajustez selon votre design */
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  75%{
+  // margin-left: 25%;
+  // width: 150%;
+
+  }
+
+  75% {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 .metiers{
   display: flex;

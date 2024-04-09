@@ -1,31 +1,47 @@
+<div class="home">
+  <div>
+    <%= render "layouts/btn"%>
+  </div>
+
 <div class="video-drone">
 <%= video_tag 'home.mp4', autoplay: true, loop: true, muted: true, style: "width: 100%;" %>
 <%= link_to root_path do %>
-  <%= image_tag("logo_carre_fond_blanc.png", alt:"logo Amure Immobilier") %>
+  <%= image_tag("logo-amure-immo.svg", alt:"logo Amure Immobilier") %>
 <% end %>
 
 
-  <div class="navigation">
-      <%= link_to root_path+'#apropos' do %>
-        <div>Qui sommes nous ? </div>
-      <% end %>
-      <%= link_to '#' do %>
-        <div>Nos metiers</div>
-      <% end %>
-      <%= link_to root_path+'#contact' do %>
-        <div>Nous contacter</div>
-      <% end %>
-  </div>
+<div class="navigation">
+  <%= link_to '#apropos' do %>
+    <div>Qui sommes nous ?</div>
+  <% end %>
+  <%= link_to '#metier' do %>
+    <div>Nos métiers</div>
+  <% end %>
+  <%= link_to '#contact' do %>
+    <div>Nous contacter</div>
+  <% end %>
+</div>
 
   <div>
     <p class="video-texte">Amure Immobilier</p>
   </div>
 </div>
 
-<%= render "pages/apropos"%>
 
+<div id="apropos">
+  <%= render "pages/apropos" %>
+</div>
+
+<div>
 <%= render "pages/home/adn"%>
+</div>
 
-<%= render "pages/home/metier"%>
+<div id="metier">
+  <%= render "pages/home/metier" %>
+</div>
 
-<%= render "pages/home/contact"%>
+<div id="contact">
+  <%= render "pages/home/contact" %>
+</div>
+
+</div>
