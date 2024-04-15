@@ -5,16 +5,18 @@
 
 body {
   font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+  background: black;
 }
 h1, h2, p, a, ul, li{
   font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+  color: white;
 }
 
 h1{
   font-weight: bold;
   font-size: 24px;
   text-align: center;
-  color: #182A5D;
+  color: white;
 }
 
 
@@ -22,6 +24,11 @@ h2{
   font-weight:lighter;
   font-size: 20px;
   text-align: center;
-  color: #264C6D;
+  color: white;
 
+}
+
+
+p{
+  color: white
 }

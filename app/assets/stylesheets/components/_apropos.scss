@@ -6,14 +6,15 @@ justify-content: center;
 }
 
 .presentation{
-  background-image: linear-gradient(to right, #182A5D, #2743AD);
-  width: 70%;
+  // background-image: linear-gradient(to right, #182A5D, #2743AD);
+  width: 60%;
   padding: 24px;
 
   p{
     color: white;
-    text-align: justify;
-    width: 65%;
+    text-align: center;
+    width: 100%;
+    line-height: 2.1
   }
 }
 
@@ -25,6 +26,6 @@ justify-content: center;
 
   a{
   text-decoration: none;
-  color: black
+  color: white
   }
 }

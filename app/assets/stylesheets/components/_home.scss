@@ -1,12 +1,14 @@
-
+.home{
+  background: #000;
+}
 .video-drone{
     position: relative;
     width: 100%;
     // filter: brightness(80%);
     img{
       position: absolute;
-      top: 1%;
-      left: 5%;
+      top: 2%;
+      left: 10%;
       height: 10vh;
     }
   }
@@ -14,28 +16,51 @@
   .navigation {
     position: absolute;
     top: 5%;
-    left: 60%;
+    left: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
 
     a{
       text-decoration: none;
-      color: #303031;
+      color: white;
+      font-size: 18px;
+
+    }
+
+
+    a:hover{
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      text-decoration: underline white;
     }
   }
 
 
-.video-texte {
+.video-texte-bold {
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 72px; /* ou essayez avec '4vw' pour une taille responsive */
+  font-size: 82px; /* ou essayez avec '4vw' pour une taille responsive */
   color: white;
   text-align: center; /* Assure le centrage du texte si celui-ci occupe plusieurs lignes */
   font-weight: bold;
+  width: 100%; /* Assure une largeur maximale et le centrage du texte */
+}
+
+
+.video-texte-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px; /* ou essayez avec '4vw' pour une taille responsive */
+  color: white;
+  text-align: center; /* Assure le centrage du texte si celui-ci occupe plusieurs lignes */
+  font-weight: light;
   width: 100%; /* Assure une largeur maximale et le centrage du texte */
 }
 
