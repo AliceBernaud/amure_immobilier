@@ -34,12 +34,14 @@
 
   .social{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 33%;
 
     img {
-      height: 5vh;
+      height: 7vh;
+      background: black;
+      border: 1px solid white;
     }
 
   }

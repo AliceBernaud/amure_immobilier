@@ -1,5 +1,5 @@
 .home{
-  background: #000;
+  background: black
 }
 .video-drone{
     position: relative;
@@ -54,7 +54,7 @@
 
 .video-texte-light {
   position: absolute;
-  top: 50%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 22px; /* ou essayez avec '4vw' pour une taille responsive */
