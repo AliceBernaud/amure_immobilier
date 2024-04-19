@@ -20,6 +20,20 @@
   // animation: scroll 20s linear infinite;
 }
 
+.mot_cles:last-child{
+  display: flex;
+  flex-direction: column;
+  border-right: 0;
+  display: inline-block;
+  padding: 24px;
+  width: 33%;
+
+  p{
+    text-align: center;
+  }
+  // animation: scroll 20s linear infinite;
+}
+
 .amure{
   background-image: linear-gradient(to right, #182A5D, #2743AD, #3476B4);
 

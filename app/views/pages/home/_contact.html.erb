@@ -4,52 +4,53 @@
       <div class="infos-amure">
         <h2>Amure Immobilier</h2>
         <div class="contact-amure">
-          <%= image_tag("localisation.png", alt:"localisation") %>
+          <%= image_tag("icon-localisation-white.png", alt:"localisation") %>
           <p> 192 avenue du Prado, 13008 Marseille </p>
         </div>
         <div class="contact-amure">
-          <%= image_tag("localisation.png", alt:"localisation") %>
+          <%# <%= image_tag("localisation.png", alt:"localisation") %>
           <p> ✉️ contact@amure-immobilier.com  </p>
         </div>
       </div>
 
-    <%= image_tag("Line.png", alt:"line") %>
-
+      <div class="line">
+        <%= image_tag("line-2.png", alt:"line") %>
+      </div>
 
       <div class="infos-flo">
         <h2>Florent Lacombe</h2>
         <div class="contact-amure">
-          <%= image_tag("localisation.png", alt:"localisation") %>
-          <p> 📞 07 82 87 12 27 </p>
+          <%= image_tag("icone-tel.png", alt:"localisation") %>
+          <p> 07 82 87 12 27 </p>
         </div>
         <div class="contact-amure">
-          <%= image_tag("localisation.png", alt:"localisation") %>
+          <%# <%= image_tag("localisation.png", alt:"localisation") %>
           <p> ✉️ florent@amure-immobilier.com</p>
         </div>
       </div>
     </div>
 
-    <div class="formulaire" data-controller="contact">
+    <div class="formulaire" data-controller="form">
         <%= form_with model: @contact, local: true, html: { class: 'form' } do |f| %>
 
           <div class="champs">
             <%= f.label :nom %>
-            <%= f.text_field :nom, data: { action: "blur->contact#handleBlur", contact_target: "nom" } %>
-            <p class="d-none text-danger fst-italic" data-contact-target="text" style="font-size: 12px;">Le nom est obligatoire</p>
+            <%= f.text_field :nom, data: { action: "blur->form#handleBlur", form_target: "nom" } %>
+            <p class="d-none text-danger fst-italic" data-form-target="text" style="font-size: 12px;">Le nom est obligatoire</p>
 
             <%= f.label :email %>
-            <%= f.email_field :email, data: { action: "blur->contact#handleBlur", contact_target: "email" } %>
-            <p class="d-none text-danger fst-italic" data-contact-target="textEmail" style="font-size: 12px;">L'email est obligatoire</p>
+            <%= f.email_field :email, data: { action: "blur->form#handleBlur", form_target: "email" } %>
+            <p class="d-none text-danger fst-italic" data-form-target="textEmail" style="font-size: 12px;">L'email est obligatoire</p>
 
             <%= f.label :telephone %>
-            <%= f.telephone_field :telephone, data: { action: "blur->contact#handleBlur", contact_target: "telephone" } %>
-            <p class="d-none text-danger fst-italic" data-contact-target="textTel" style="font-size: 12px;">Le téléphone est obligatoire</p>
+            <%= f.telephone_field :telephone, data: { action: "blur->form#handleBlur", form_target: "telephone" } %>
+            <p class="d-none text-danger fst-italic" data-form-target="textTel" style="font-size: 12px;">Le téléphone est obligatoire</p>
 
             <%= f.label :message %>
-            <%= f.text_area :message, data: { action: "blur->contact#handleBlur", contact_target: "message" } %>
-            <p class="d-none text-danger fst-italic" data-contact-target="textMessage" style="font-size: 12px;">Le message est obligatoire</p>
+            <%= f.text_area :message, data: { action: "blur->form#handleBlur", form_target: "message" } %>
+            <p class="d-none text-danger fst-italic" data-form-target="textMessage" style="font-size: 12px;">Le message est obligatoire</p>
 
-            <%= f.submit "Envoyer", data: { action: "click->contact#submitForm" }, class: "btn-envoyer" %>
+            <%= f.submit "Envoyer", data: { action: "click->formt#submitForm" }, class: "btn-envoyer" %>
           </div>
 
         <% end %>
