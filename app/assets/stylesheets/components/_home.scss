@@ -1,6 +1,12 @@
 .home{
   background: black
 }
+
+@media (max-width: 768px){
+  .home{
+    width: 100%
+  }
+}
 .video-drone{
     position: relative;
     width: 100%;
@@ -10,6 +16,10 @@
       top: 2%;
       left: 10%;
       height: 10vh;
+
+      @media (max-width: 768px){
+        height: 5vh
+      }
     }
   }
 
@@ -51,6 +61,12 @@
   width: 100%; /* Assure une largeur maximale et le centrage du texte */
 }
 
+@media (max-width: 768px){
+  .video-texte-bold{
+    font-size: 42px
+  }
+}
+
 
 .video-texte-light {
   position: absolute;
@@ -62,6 +78,14 @@
   text-align: center; /* Assure le centrage du texte si celui-ci occupe plusieurs lignes */
   font-weight: light;
   width: 100%; /* Assure une largeur maximale et le centrage du texte */
+}
+
+@media (max-width: 768px){
+  .video-texte-light{
+    top: 50%;
+    font-size: 12px;
+    width: 50%
+  }
 }
 
 

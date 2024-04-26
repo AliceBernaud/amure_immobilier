@@ -8,11 +8,12 @@
   // z-index:11;
   width: 100%;
   transition: margin-left 0.3s, width 0.3s;
+  padding: 0 54px;
 
   .liens{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     width: 33%;
     a{
@@ -34,7 +35,7 @@
 
   .social{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 33%;
 

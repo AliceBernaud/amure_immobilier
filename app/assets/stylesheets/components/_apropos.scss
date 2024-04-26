@@ -1,5 +1,11 @@
 #apropos{
-  padding: 24px;
+  padding: 0 54px;
+}
+
+@media (max-width: 768px){
+  #apropos{
+  padding: 8px 24px
+  }
 }
 
 .apropos{
@@ -8,6 +14,7 @@ flex-direction: column;
 justify-content: center;
 
 }
+
 
 .presentation{
   // background-image: linear-gradient(to right, #182A5D, #2743AD);
@@ -21,6 +28,16 @@ justify-content: center;
     text-align: center;
     width: 100%;
     line-height: 2.1
+  }
+}
+
+@media (max-width: 768px){
+  .presentation{
+    width: 100%;
+
+    p{
+      text-align: justify;
+    }
   }
 }
 
@@ -63,5 +80,21 @@ justify-content: center;
     padding: 0 24px;
     width: 32%;
     line-height: 2.1
+  }
+}
+
+@media (max-width: 768px){
+  .portrait{
+    display: flex;
+    flex-direction: column;
+
+    img{
+      width: 280px
+    }
+
+    .prez{
+      width: 100%;
+      padding: 0
+    }
   }
 }

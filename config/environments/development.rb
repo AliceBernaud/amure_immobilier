@@ -17,6 +17,23 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
 
+  # Don't care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = true
+
+  # DEVISE MAILER for development
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'mail.amure-immobilier.com',
+    port: 587,
+    domain: 'amure-immobilier.com',
+    user_name: 'contact@amure-immobilier.com',
+    password: ENV['EMAIL_PASSWORD'],
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
+
+  config.action_mailer.default_url_options = { host: 'votre_site.com' }
+
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?

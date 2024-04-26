@@ -1,0 +1,28 @@
+<body>
+  <h1>Nouveau message du formulaire de contact</h1>
+  <p><span class="label">Nom:</span> <%= @nom %></p>
+  <p><span class="label">E-mail:</span> <%= @email %></p>
+  <p><span class="label">Téléphone:</span> <%= @telephone %></p>
+  <hr>
+  <p><span class="label">Message:</span></p>
+  <p><%= @message %></p>
+</body>
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .label {
+      font-weight: bold;
+    }
+  </style>

@@ -53,6 +53,14 @@
 
 }
 
+@media (max-width: 768px){
+  .metiers{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 0;
+  }
+}
+
 .elements-audit {
   display: flex;
   flex-direction: column;
@@ -65,6 +73,16 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative; /* Essentiel pour le positionnement du pseudo-élément */
+}
+
+
+@media (max-width: 768px){
+  .elements-audit{
+  width: 330px;
+  background-image: url('audit-immo.jpeg');
+  filter: opacity(80%); /* Ajustez l'opacité ici */
+
+  }
 }
 
 .elements-audit::before {
@@ -91,6 +109,17 @@
   display: none;
 }
 
+@media (max-width: 768px){
+  .elements-audit li{
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.1;
+  position: relative
+  }
+}
+
 .elements-audit:hover li {
   display: list-item;
   color: black;
@@ -110,6 +139,14 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative; /* Essentiel pour le positionnement du pseudo-élément */
+}
+
+@media (max-width: 768px){
+  .elements-bureau{
+  width: 330px;
+  background-image: url('bureaux.webp');
+  filter: opacity(80%); /* Ajustez l'opacité ici */
+  }
 }
 
 .elements-bureau::before {
@@ -136,6 +173,17 @@
   display: none;
 }
 
+@media (max-width: 768px){
+  .elements-bureau li{
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.8;
+  position: relative
+  }
+}
+
 .elements-bureau:hover li {
   display: list-item;
   color: black;
@@ -155,6 +203,15 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative; /* Essentiel pour le positionnement du pseudo-élément */
+}
+
+@media (max-width: 768px){
+  .elements-commercialisation{
+  width: 330px;
+  background-image: url('commercialisation.jpeg');
+  filter: opacity(80%); /* Ajustez l'opacité ici */
+
+  }
 }
 
 .elements-commercialisation::before {
@@ -181,6 +238,17 @@
   display: none;
 }
 
+@media (max-width: 768px){
+  .elements-commercialisation li{
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.1;
+  position: relative
+  }
+}
+
 .elements-commercialisation:hover li {
   display: list-item;
   color: black;
@@ -200,6 +268,15 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative; /* Essentiel pour le positionnement du pseudo-élément */
+}
+
+@media (max-width: 768px){
+  .elements-invest{
+  width: 330px;
+  background-image: url('investissement.jpeg');
+  filter: opacity(80%); /* Ajustez l'opacité ici */
+
+  }
 }
 
 .elements-invest::before {
@@ -224,6 +301,17 @@
 
 .elements-invest li {
   display: none;
+}
+
+@media (max-width: 768px){
+  .elements-invest li{
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 2.1;
+  position: relative
+  }
 }
 
 .elements-invest:hover li {

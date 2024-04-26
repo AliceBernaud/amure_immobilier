@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   # get 'cgv', to: 'pages#cgv', as: 'cgv'
   # Defines the root path route ("/")
   # root "posts#index"
+
+  post '/home', to: 'contact#create', as: 'mail'
 end

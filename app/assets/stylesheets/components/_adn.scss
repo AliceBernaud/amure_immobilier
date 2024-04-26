@@ -6,6 +6,13 @@
   padding: 24px 8px
 }
 
+@media (max-width: 768px){
+  .adn{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .mot_cles{
   display: flex;
   flex-direction: column;
@@ -20,6 +27,19 @@
   // animation: scroll 20s linear infinite;
 }
 
+@media (max-width: 768px){
+  .mot_cles{
+    border-bottom: 1px solid grey;
+    border-right: 0;
+    width: 100%
+  }
+
+  .mot_cles:last-child{
+    border-bottom: 1px solid grey;
+    width: 100%
+  }
+}
+
 .mot_cles:last-child{
   display: flex;
   flex-direction: column;
@@ -32,6 +52,13 @@
     text-align: center;
   }
   // animation: scroll 20s linear infinite;
+}
+
+@media (max-width: 768px){
+  .mot_cles:last-child{
+    border-bottom: 1px solid grey;
+    width: 100%
+  }
 }
 
 .amure{
