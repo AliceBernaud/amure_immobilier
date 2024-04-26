@@ -23,13 +23,15 @@ Rails.application.configure do
   # DEVISE MAILER for development
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'mail.amure-immobilier.com',
-    port: 587,
+    address: 'amure-immobilier.com',
+    port: 465,
     domain: 'amure-immobilier.com',
     user_name: 'contact@amure-immobilier.com',
     password: ENV['EMAIL_PASSWORD'],
     authentication: 'plain',
-    enable_starttls_auto: true
+    ssl: true,               # Assurez-vous que SSL est activé
+    tls: false,              # TLS n'est pas nécessaire si SSL est utilisé sur le port 465
+    enable_starttls_auto: false  # STARTTLS n'est pas nécessaire avec SSL explicite sur le port 465
   }
 
   config.action_mailer.default_url_options = { host: 'votre_site.com' }
